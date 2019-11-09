@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="edu.iff.citi" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>CITI 2019: Credenciamento</name>
     <description>QRcode accreditation app for CITI (Integrated Information Technology Congress, from portuguese) 2019 at IFF Campos Centro.</description>
     <author email="luidi_mso@outlook.com" href="https://github.com/luidimso">Luidi Matheus</author>

@@ -12,7 +12,8 @@ import { File } from '@ionic-native/file';
 export class QrcodePage {
   voluntario:string;
   atividade:string;
-  url:string = "http://192.168.15.4/citi/citi.php"
+  url:string = "http://citiapp.centro.iff.edu.br/citi.php";
+  // url:string = "http://192.168.15.5/citi/citi.php";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public scanner: BarcodeScanner, public file:File, public alertCtrl: AlertController, public http: HttpClient, public loading: LoadingController) {
     this.voluntario = this.navParams.get("nome")
@@ -57,7 +58,7 @@ export class QrcodePage {
                 let loading = this.loading.create({ content: "Registrando" });
                 loading.present();
 
-                this.http.get(this.url+"?cpf="+dados[0]+"&nome="+dados[1]+"&atividade="+this.atividade+"&data="+dateText+"&voluntario="+this.voluntario).subscribe(res => {
+                this.http.get(this.url+"?cpf="+dados[0]+"&nome="+dados[1]+"&atividade="+this.atividade+"&data="+dateText+"&voluntario="+this.voluntario+"&modo=p&key=2019ct9102").subscribe(res => {
                   loading.dismiss();
                 }, err => {
                   loading.dismiss();

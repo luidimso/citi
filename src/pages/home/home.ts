@@ -24,4 +24,8 @@ export class HomePage {
     }
   }
 
+  onQrcodeVoluntario(){
+    this.navCtrl.push("QrcodeVoluntarioPage");
+  }
+
 }
