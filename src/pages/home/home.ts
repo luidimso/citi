@@ -28,4 +28,13 @@ export class HomePage {
     this.navCtrl.push("QrcodeVoluntarioPage");
   }
 
+  counter(length:number):number[]{
+    let array = [];
+
+    for(let i=1; i<=length; i++){
+      array.push(i);
+    }
+
+    return array;
+  }
 }

@@ -21,9 +21,13 @@
           <ion-item>
             <ion-label color="dark" stacked>Atividade:</ion-label>
             <ion-select #atividade>
-              <ion-option value="1">Atividade 1</ion-option>
-              <ion-option value="2">Atividade 2</ion-option>
-              <ion-option value="3">Atividade 3</ion-option>
+              <ion-option *ngFor="let i of counter(5)" value="artigo{{i}}">Artigo {{i}}</ion-option>
+              <ion-option value="credenciamento">Credenciamento</ion-option>
+              <ion-option value="doacao">Doação</ion-option>
+              <ion-option *ngFor="let i of counter(17)" value="mc{{i}}">MC {{i}}</ion-option>
+              <ion-option *ngFor="let i of counter(2)" value="mesa{{i}}">Mesa {{i}}</ion-option>
+              <ion-option *ngFor="let i of counter(5)" value="palestra{{i}}">Palestra {{i}}</ion-option>
+              <ion-option value="painel">Painel</ion-option>
             </ion-select>
           </ion-item>
         </ion-list>
