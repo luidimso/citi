@@ -10,9 +10,9 @@ import { File } from '@ionic-native/file';
   templateUrl: 'qrcode-voluntario.html',
 })
 export class QrcodeVoluntarioPage {
-  nome:string;
+  nome:string = "";
   url:string = "http://citiapp.centro.iff.edu.br/citi.php";
-  // url:string = "http://192.168.15.6/citi/citi.php";
+  //url:string = "http://192.168.15.6/citi/citi.php";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public scanner: BarcodeScanner, public file:File, public alertCtrl: AlertController, public http: HttpClient, public loading: LoadingController) {
     this.file.createFile(this.file.externalRootDirectory, "citi2019_voluntarios_bkp.csv", false);
