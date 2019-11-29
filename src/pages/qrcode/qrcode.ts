@@ -12,8 +12,7 @@ import { File } from '@ionic-native/file';
 export class QrcodePage {
   voluntario:string;
   atividade:string;
-  url:string = "http://citiapp.centro.iff.edu.br/citi.php";
-  //url:string = "http://192.168.15.6/citi/citi.php";
+  url:string = "http://localhost/citi/citi.php";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public scanner: BarcodeScanner, public file:File, public alertCtrl: AlertController, public http: HttpClient, public loading: LoadingController) {
     this.voluntario = this.navParams.get("nome")
